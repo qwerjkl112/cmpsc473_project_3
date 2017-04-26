@@ -10,11 +10,36 @@
 
 int main() 
 {
-	myVirtualMemoryManagerInterface test_FIFO(FIFO, 2, 2, 16);
-	myVirtualMemoryManagerInterface test_LRU(LRU, 2, 2, 16);
+	myVirtualMemoryManagerInterface test_FIFO(FIFO, 2, 2, 4);
+	myVirtualMemoryManagerInterface test_LRU(LRU, 2, 2, 4);
 
-	test_FIFO.memoryAccess(0);
+	// FIFO example on the slides 
+//	test_FIFO.memoryAccess(0);	
+//	test_FIFO.memoryAccess(2);
+//	test_FIFO.memoryAccess(1);
+//	test_FIFO.memoryAccess(6);
+//	test_FIFO.memoryAccess(4);
+//	test_FIFO.memoryAccess(0);
+//	test_FIFO.memoryAccess(1);	
+//	test_FIFO.memoryAccess(0);
+//	test_FIFO.memoryAccess(3);
+//	test_FIFO.memoryAccess(1);
+//	test_FIFO.memoryAccess(2);
+//	test_FIFO.memoryAccess(1);
 
-	
+	// LRU example on the slides
+	test_LRU.memoryAccess(0);	
+	test_LRU.memoryAccess(2);
+	test_LRU.memoryAccess(1);
+	test_LRU.memoryAccess(6);
+	test_LRU.memoryAccess(4);
+	test_LRU.memoryAccess(0);
+	test_LRU.memoryAccess(1);	
+	test_LRU.memoryAccess(0);
+	test_LRU.memoryAccess(3);
+	test_LRU.memoryAccess(1);
+	test_LRU.memoryAccess(2);
+	test_LRU.memoryAccess(1);
+
 	return 0;
 }
